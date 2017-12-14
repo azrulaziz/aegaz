@@ -1,9 +1,16 @@
+/***************************************/
+/*Main Body*/
+/***************************************/
 body {
     padding: 0;
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+
+/***************************************/
+/*MAIN HEADER*/
+/***************************************/
 .wrapper {
     height: 100vh;
     display: grid;
@@ -21,7 +28,29 @@ body {
     font-size: 10px;
 }
 
+/***************************************/
+/*BLURBS*/
+/***************************************/
+.blurbs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px;
+    justify-items: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+/***************************************/
 /*TEXT*/
+/***************************************/
 
 h1 {
     text-align: center;
