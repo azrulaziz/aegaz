@@ -1,0 +1,36 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.wrapper {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-template-rows: auto;
+}
+
+.center {
+    align-self: start;
+}
+
+.end {
+    align-self: end;
+    font-size: 10px;
+}
+
+/*TEXT*/
+
+h1 {
+    text-align: center;
+     font-size: 70px;
+     margin-bottom: 0;
+}
+
+.center p {
+    text-align: center;
+    margin-top: 0;
+    font-size: 20px;
+}
