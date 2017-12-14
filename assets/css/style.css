@@ -16,16 +16,19 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
-    grid-template-rows: auto;
+    grid-template-rows: minmax(100px, auto);
+    background: #000;
+    color: #fff;
 }
 
 .center {
     align-self: start;
+    grid-rows: minxmax(100px, auto);
 }
 
 .end {
     align-self: end;
-    font-size: 10px;
+    
 }
 
 /***************************************/
@@ -40,26 +43,37 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
 /***************************************/
 /*TEXT*/
 /***************************************/
 
 h1 {
     text-align: center;
-     font-size: 70px;
+     font-size: 6em;
      margin-bottom: 0;
+     margin-top: 0;
+     
 }
 
 .center p {
     text-align: center;
     margin-top: 0;
-    font-size: 20px;
+    font-size: 1.6em;
+    margin-bottom: 0;
+}
+
+
+/***************************************/
+/*MEDIA SCREEN*/
+/***************************************/
+
+/*if screen less than 700px*/
+@media (max-width: 700px) {
+    h1 {
+        font-size: 3em;
+    }
+    
+    .center p {
+        font-size: 1em;
+    }
 }
